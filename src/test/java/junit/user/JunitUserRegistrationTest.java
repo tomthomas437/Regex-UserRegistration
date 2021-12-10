@@ -7,49 +7,49 @@ public class JunitUserRegistrationTest {
 
 	    @Test
 	    public void givenFirstName_IsProper_ReturnTrue() {
-	        boolean actualResult = junitUserRegistration.firstName("Ramakrishna");
+	        boolean actualResult = junitUserRegistration.firstName("Tom");
 	        Assert.assertEquals(true, actualResult);
 	    }
 
 	    @Test
 	    public void givenFirstName_IsProper_ReturnFalse() {
-	        boolean actualResult = junitUserRegistration.firstName("RamaKrishna");
+	        boolean actualResult = junitUserRegistration.firstName("tom");
 	        Assert.assertEquals(false, actualResult);
 	    }
 
 	    @Test
 	    public void givenLastName_IsProper_ReturnTrue() {
-	        boolean actualResult = junitUserRegistration.lastName("Velisetti");
+	        boolean actualResult = junitUserRegistration.lastName("Thomas");
 	        Assert.assertEquals(true, actualResult);
 	    }
 
 	    @Test
 	    public void givenLastName_IsNotProper_ReturnFalse() {
-	        boolean actualResult = junitUserRegistration.lastName("veliseTTi");
+	        boolean actualResult = junitUserRegistration.lastName("thOmas");
 	        Assert.assertEquals(false, actualResult);
 	    }
 
 	    @Test
 	    public void givenEmailId_IsProper_ReturnTrue() {
-	        boolean actualResult = junitUserRegistration.emailId("ramakrishna96.velisetti@gmail.com");
+	        boolean actualResult = junitUserRegistration.emailId("tom.thomas437@gmail.com");
 	        Assert.assertEquals(true, actualResult);
 	    }
 
 	    @Test
 	    public void givenEmailId_IsNotProper_ReturnFalse() {
-	        boolean actualResult = junitUserRegistration.emailId("ramakrishna96.velisettigmail.com");
+	        boolean actualResult = junitUserRegistration.emailId("tom473gmail.com");
 	        Assert.assertEquals(false, actualResult);
 	    }
 
 	    @Test
 	    public void givenMobileNumber_IsProper_ReturnTrue() {
-	        boolean actualResult = junitUserRegistration.mobileNumber("91 9989774456");
+	        boolean actualResult = junitUserRegistration.mobileNumber("91 9158679678");
 	        Assert.assertEquals(true, actualResult);
 	    }
 
 	    @Test
 	    public void givenMobileNumber_IsNotProper_ReturnFalse() {
-	        boolean actualResult = junitUserRegistration.mobileNumber("919989774456");
+	        boolean actualResult = junitUserRegistration.mobileNumber("919875645674");
 	        Assert.assertEquals(false, actualResult);
 	    }
 
